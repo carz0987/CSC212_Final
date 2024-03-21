@@ -1,0 +1,42 @@
+# Proposal
+
+Date: 03/07/24
+Matt's Proposal: Optimal Route Tracking Algorithm
+
+Complete the following...
+
+## Group members (3-4, include name and email)
+Badhan Hasan - badhan_hasan@uri.edu
+Jay Lei - zhuo_lei@uri.edu
+Matthew Petrarca - mcpmatt@uri.edu
+Mani Subramani - msubramani@uri.edu
+
+
+## Real-world Problem
+Matt's Proposal:
+    Real World Problem: 
+        Delivery companies, such as Amazon/UPS/FEDEX/USPS, need to be able to make millions of deliveries per day. 
+        Optimal Route Tracking Algorithms can save companies millions, improve delivery efficiency, and decrease average time spent per delivery.
+
+    Implementation:
+        1) Read and store data from a .csv file.
+        2) Sort data by priority, address, while splitting data into variables such as distance, number of packages, etc...
+        3) Create an algorithm that finds the optimal path/route for a delivery vehicle to choose.
+        4) Consider variables such as number of packages/deliveries, traffic/lights/speed limits, and weight of each delivery item.
+        5) Optimize algorithm based on featured parameters: shortest distance/overall time may NOT be the most optimal path, based on parameters such of number of items per stop.
+            ->(For instance: even though a stop may be the shortest distance, a driver may not be able to access it due to overflow from another stop.)
+            ->(Example: any high item stops, 20+, should be prioritized.)
+
+
+
+## Data Structures & Algorithms (at least 3)
+Matt's Proposal:
+    1) Sorting Algorithm to sort delivery information based on address/time of order placed.
+        - Pigeonhole Sort
+    2) Tree Structure, most likely a Linked List, with Nodes that contain information about each stop.
+        - Red-Black Tree
+    3) Route Tracking Alorithm that selects the most optimal route based on set Conditionals.
+        - A* Search Algorithm
+    4) Data Structure to store elements with Priority Queues.
+        - Bucket Queue
+
